@@ -1,0 +1,1078 @@
+[gd_scene load_steps=9 format=3 uid="uid://b2whbnf5sjrer"]
+
+[ext_resource type="Script" path="res://Scenes/Ui/upgrade_menu.gd" id="1_li4rh"]
+[ext_resource type="Texture2D" uid="uid://dty5nrwm5xtgg" path="res://Graphics/ui/Pxiel Art UI borders.png" id="2_7u0i0"]
+[ext_resource type="Texture2D" uid="uid://dypx6s11gj86d" path="res://Graphics/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/coin_05d.png" id="2_arraj"]
+[ext_resource type="Texture2D" uid="uid://kh8ypsnpgsmr" path="res://Graphics/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/coin_02d.png" id="3_d168c"]
+[ext_resource type="Texture2D" uid="uid://dwq4i424si847" path="res://Graphics/XBOX BUTTONS - Premium Assets/XBOX BUTTONS - Premium Assets/XBOX BUTTONS - Premium Assets/Analog Sticks/Blank/button_xboxone_analog_blank.png" id="3_xpxps"]
+[ext_resource type="Texture2D" uid="uid://bp4b48ho8beb" path="res://Graphics/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/key_01d.png" id="4_4u5u7"]
+[ext_resource type="Texture2D" uid="uid://c6dt8jk6hrgnw" path="res://Graphics/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/key_01c.png" id="5_u1ffb"]
+[ext_resource type="Texture2D" uid="uid://c0fjvon6b21oe" path="res://Graphics/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/coin_02d.png" id="6_utdaw"]
+
+[node name="UpgradeMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_li4rh")
+
+[node name="Weapons" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+offset_left = 1741.0
+offset_top = 891.0
+offset_right = 1812.0
+offset_bottom = 914.0
+size_flags_horizontal = 0
+size_flags_vertical = 1
+text = "Weapons"
+horizontal_alignment = 1
+
+[node name="Objects" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 113.0
+offset_top = 883.0
+offset_right = 171.0
+offset_bottom = 906.0
+text = "Objects"
+horizontal_alignment = 1
+
+[node name="Money" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -30.0
+offset_top = 150.0
+offset_right = 10.0
+offset_bottom = 173.0
+grow_horizontal = 2
+text = "100"
+
+[node name="MoneyIcon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 4.0
+offset_top = 144.0
+offset_right = 54.0
+offset_bottom = 184.0
+grow_horizontal = 2
+texture = ExtResource("2_arraj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RerollQuantity" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 538.0
+offset_top = 150.0
+offset_right = 588.0
+offset_bottom = 175.0
+grow_horizontal = 2
+text = "-3
+"
+horizontal_alignment = 1
+
+[node name="MoneyIcon2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 563.0
+offset_top = 144.0
+offset_right = 635.0
+offset_bottom = 181.0
+grow_horizontal = 2
+texture = ExtResource("3_d168c")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Lock1" type="TextureButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 499.0
+offset_top = 785.0
+offset_right = 539.0
+offset_bottom = 825.0
+texture_normal = ExtResource("4_4u5u7")
+texture_hover = ExtResource("5_u1ffb")
+texture_focused = ExtResource("5_u1ffb")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Lock3" type="TextureButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1382.0
+offset_top = 785.0
+offset_right = 1422.0
+offset_bottom = 825.0
+texture_normal = ExtResource("4_4u5u7")
+texture_hover = ExtResource("5_u1ffb")
+texture_focused = ExtResource("5_u1ffb")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Lock2" type="TextureButton" parent="."]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 941.0
+offset_top = 785.0
+offset_right = 981.0
+offset_bottom = 825.0
+texture_normal = ExtResource("4_4u5u7")
+texture_hover = ExtResource("5_u1ffb")
+texture_focused = ExtResource("5_u1ffb")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="StoreMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 300
+theme_override_constants/margin_top = 300
+theme_override_constants/margin_right = 300
+theme_override_constants/margin_bottom = 300
+
+[node name="StoreHbox" type="HBoxContainer" parent="StoreMargin"]
+layout_mode = 2
+
+[node name="IndividualStoreMargin" type="MarginContainer" parent="StoreMargin/StoreHbox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="Background1" type="ColorRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(1, 1, 1, 0.396078)
+
+[node name="StoreBorder" type="TextureRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin/Background1"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.5
+offset_top = 50.0
+offset_right = 48.5
+offset_bottom = 148.0
+grow_horizontal = 2
+texture = ExtResource("2_7u0i0")
+
+[node name="Item1" type="TextureRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin/Background1/StoreBorder"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_xpxps")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ItemDescription1" type="Label" parent="StoreMargin/StoreHbox/IndividualStoreMargin/Background1"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 20.0
+offset_top = -55.0
+offset_right = -20.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="Buy" type="Button" parent="StoreMargin/StoreHbox/IndividualStoreMargin/Background1"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -48.0
+offset_right = 20.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Buy"
+
+[node name="Price1" type="Label" parent="StoreMargin/StoreHbox/IndividualStoreMargin/Background1"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -80.0
+offset_right = 6.0
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "90"
+horizontal_alignment = 1
+
+[node name="ItemName1" type="Label" parent="StoreMargin/StoreHbox/IndividualStoreMargin/Background1"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -41.5
+offset_right = 41.5
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "item_name"
+
+[node name="Coin1" type="TextureRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin/Background1"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -84.0
+offset_right = 41.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_utdaw")
+
+[node name="IndividualStoreMargin2" type="MarginContainer" parent="StoreMargin/StoreHbox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="Background2" type="ColorRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin2"]
+unique_name_in_owner = true
+layout_mode = 2
+color = Color(1, 1, 1, 0.396078)
+
+[node name="StoreBorder2" type="TextureRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin2/Background2"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.5
+offset_top = 50.0
+offset_right = 48.5
+offset_bottom = 148.0
+grow_horizontal = 2
+texture = ExtResource("2_7u0i0")
+
+[node name="Item2" type="TextureRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin2/Background2/StoreBorder2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_xpxps")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ItemDescription2" type="Label" parent="StoreMargin/StoreHbox/IndividualStoreMargin2/Background2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 20.0
+offset_top = -55.0
+offset_right = -20.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Buy2" type="Button" parent="StoreMargin/StoreHbox/IndividualStoreMargin2/Background2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -48.0
+offset_right = 20.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Buy"
+
+[node name="ItemName2" type="Label" parent="StoreMargin/StoreHbox/IndividualStoreMargin2/Background2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -41.5
+offset_right = 41.5
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "item_name"
+
+[node name="Price2" type="Label" parent="StoreMargin/StoreHbox/IndividualStoreMargin2/Background2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -80.0
+offset_right = 6.0
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "90"
+horizontal_alignment = 1
+
+[node name="Coin2" type="TextureRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin2/Background2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -84.0
+offset_right = 41.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_utdaw")
+
+[node name="IndividualStoreMargin3" type="MarginContainer" parent="StoreMargin/StoreHbox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="Background3" type="ColorRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin3"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(1, 1, 1, 0.396078)
+
+[node name="StoreBorder3" type="TextureRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin3/Background3"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.5
+offset_top = 50.0
+offset_right = 48.5
+offset_bottom = 148.0
+grow_horizontal = 2
+texture = ExtResource("2_7u0i0")
+
+[node name="Item3" type="TextureRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin3/Background3/StoreBorder3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_xpxps")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ItemDescription3" type="Label" parent="StoreMargin/StoreHbox/IndividualStoreMargin3/Background3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 20.0
+offset_top = -55.0
+offset_right = -20.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description Item description "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Buy3" type="Button" parent="StoreMargin/StoreHbox/IndividualStoreMargin3/Background3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -48.0
+offset_right = 20.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 6
+text = "Buy"
+
+[node name="ItemName3" type="Label" parent="StoreMargin/StoreHbox/IndividualStoreMargin3/Background3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -41.5
+offset_right = 41.5
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "item_name"
+
+[node name="Price3" type="Label" parent="StoreMargin/StoreHbox/IndividualStoreMargin3/Background3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -80.0
+offset_right = 6.0
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "90"
+horizontal_alignment = 1
+
+[node name="Coin3" type="TextureRect" parent="StoreMargin/StoreHbox/IndividualStoreMargin3/Background3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -84.0
+offset_right = 41.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_utdaw")
+
+[node name="WeaponsMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -265.0
+offset_top = -170.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="WeaponsGrid" type="GridContainer" parent="WeaponsMargin"]
+layout_mode = 2
+columns = 3
+
+[node name="WeaponBorder" type="TextureButton" parent="WeaponsMargin/WeaponsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Weapon1" type="TextureRect" parent="WeaponsMargin/WeaponsGrid/WeaponBorder"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WeaponBorder2" type="TextureButton" parent="WeaponsMargin/WeaponsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Weapon2" type="TextureRect" parent="WeaponsMargin/WeaponsGrid/WeaponBorder2"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WeaponBorder3" type="TextureButton" parent="WeaponsMargin/WeaponsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Weapon3" type="TextureRect" parent="WeaponsMargin/WeaponsGrid/WeaponBorder3"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WeaponBorder4" type="TextureButton" parent="WeaponsMargin/WeaponsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Weapon4" type="TextureRect" parent="WeaponsMargin/WeaponsGrid/WeaponBorder4"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WeaponBorder5" type="TextureButton" parent="WeaponsMargin/WeaponsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Weapon5" type="TextureRect" parent="WeaponsMargin/WeaponsGrid/WeaponBorder5"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WeaponBorder6" type="TextureButton" parent="WeaponsMargin/WeaponsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Weapon6" type="TextureRect" parent="WeaponsMargin/WeaponsGrid/WeaponBorder6"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ObjectsMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -170.0
+offset_right = 265.0
+grow_vertical = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="ObjectsGrid" type="GridContainer" parent="ObjectsMargin"]
+layout_mode = 2
+columns = 3
+
+[node name="ObjectBorder" type="TextureButton" parent="ObjectsMargin/ObjectsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Object1" type="TextureRect" parent="ObjectsMargin/ObjectsGrid/ObjectBorder"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ObjectBorder2" type="TextureButton" parent="ObjectsMargin/ObjectsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Object2" type="TextureRect" parent="ObjectsMargin/ObjectsGrid/ObjectBorder2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ObjectBorder3" type="TextureButton" parent="ObjectsMargin/ObjectsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Object3" type="TextureRect" parent="ObjectsMargin/ObjectsGrid/ObjectBorder3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ObjectBorder4" type="TextureButton" parent="ObjectsMargin/ObjectsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Object4" type="TextureRect" parent="ObjectsMargin/ObjectsGrid/ObjectBorder4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ObjectBorder5" type="TextureButton" parent="ObjectsMargin/ObjectsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Object5" type="TextureRect" parent="ObjectsMargin/ObjectsGrid/ObjectBorder5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ObjectBorder6" type="TextureButton" parent="ObjectsMargin/ObjectsGrid"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_7u0i0")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Object6" type="TextureRect" parent="ObjectsMargin/ObjectsGrid/ObjectBorder6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 5.0
+offset_right = -14.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StatsMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -215.0
+offset_top = -240.0
+offset_bottom = 240.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_right = 20
+
+[node name="ColorRect" type="ColorRect" parent="StatsMargin"]
+layout_mode = 2
+color = Color(1, 1, 1, 0.396078)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatsMargin/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="stats" type="Label" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 25
+text = "stats"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="max_hp" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "max_hp"
+
+[node name="max_hp_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+text = "90"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="attack" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "attack"
+
+[node name="attack_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="defence" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "defence"
+
+[node name="defence_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="speed" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer4"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "speed"
+
+[node name="speed_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer4"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "120"
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="attack_speed" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer5"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "attack_speed"
+
+[node name="attack_speed_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer5"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "150
+"
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="hp_regeneration" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer6"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "hp_regeneration"
+
+[node name="hp_regeneration_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer6"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100"
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="life_steal" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer7"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "life_steal"
+
+[node name="life_steal_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer7"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100"
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="range" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer8"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "range"
+
+[node name="range_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer8"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100"
+
+[node name="HBoxContainer9" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="crit_rate" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "crit_rate"
+
+[node name="crit_rate_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer9"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100"
+
+[node name="HBoxContainer10" type="HBoxContainer" parent="StatsMargin/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="crit_damage" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer10"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "crit_damage"
+
+[node name="crit_damage_stat" type="Label" parent="StatsMargin/ColorRect/VBoxContainer/HBoxContainer10"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+text = "100"
+
+[node name="ContinueMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -615.0
+offset_top = -298.0
+offset_right = 615.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 150
+
+[node name="Continue" type="Button" parent="ContinueMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Continue"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -481.0
+offset_bottom = 191.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 145
+
+[node name="Reroll" type="Button" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Reroll:"
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="StoreMargin/StoreHbox/IndividualStoreMargin/Background1/Buy" to="." method="_on_buy_pressed"]
+[connection signal="pressed" from="StoreMargin/StoreHbox/IndividualStoreMargin2/Background2/Buy2" to="." method="_on_buy_2_pressed"]
+[connection signal="pressed" from="StoreMargin/StoreHbox/IndividualStoreMargin3/Background3/Buy3" to="." method="_on_buy_3_pressed"]
+[connection signal="focus_entered" from="WeaponsMargin/WeaponsGrid/WeaponBorder" to="." method="_on_weapon_border_focus_entered"]
+[connection signal="focus_exited" from="WeaponsMargin/WeaponsGrid/WeaponBorder" to="." method="_on_weapon_border_focus_exited"]
+[connection signal="focus_entered" from="WeaponsMargin/WeaponsGrid/WeaponBorder2" to="." method="_on_weapon_border_2_focus_entered"]
+[connection signal="focus_exited" from="WeaponsMargin/WeaponsGrid/WeaponBorder2" to="." method="_on_weapon_border_2_focus_exited"]
+[connection signal="focus_entered" from="WeaponsMargin/WeaponsGrid/WeaponBorder3" to="." method="_on_weapon_border_3_focus_entered"]
+[connection signal="focus_exited" from="WeaponsMargin/WeaponsGrid/WeaponBorder3" to="." method="_on_weapon_border_3_focus_exited"]
+[connection signal="focus_entered" from="WeaponsMargin/WeaponsGrid/WeaponBorder4" to="." method="_on_weapon_border_4_focus_entered"]
+[connection signal="focus_exited" from="WeaponsMargin/WeaponsGrid/WeaponBorder4" to="." method="_on_weapon_border_4_focus_exited"]
+[connection signal="focus_entered" from="WeaponsMargin/WeaponsGrid/WeaponBorder5" to="." method="_on_weapon_border_5_focus_entered"]
+[connection signal="focus_exited" from="WeaponsMargin/WeaponsGrid/WeaponBorder5" to="." method="_on_weapon_border_5_focus_exited"]
+[connection signal="focus_entered" from="WeaponsMargin/WeaponsGrid/WeaponBorder6" to="." method="_on_weapon_border_6_focus_entered"]
+[connection signal="focus_exited" from="WeaponsMargin/WeaponsGrid/WeaponBorder6" to="." method="_on_weapon_border_6_focus_exited"]
+[connection signal="focus_entered" from="ObjectsMargin/ObjectsGrid/ObjectBorder" to="." method="_on_object_border_focus_entered"]
+[connection signal="focus_exited" from="ObjectsMargin/ObjectsGrid/ObjectBorder" to="." method="_on_object_border_focus_exited"]
+[connection signal="focus_entered" from="ObjectsMargin/ObjectsGrid/ObjectBorder2" to="." method="_on_object_border_2_focus_entered"]
+[connection signal="focus_exited" from="ObjectsMargin/ObjectsGrid/ObjectBorder2" to="." method="_on_object_border_2_focus_exited"]
+[connection signal="focus_entered" from="ObjectsMargin/ObjectsGrid/ObjectBorder3" to="." method="_on_object_border_3_focus_entered"]
+[connection signal="focus_exited" from="ObjectsMargin/ObjectsGrid/ObjectBorder3" to="." method="_on_object_border_3_focus_exited"]
+[connection signal="focus_entered" from="ObjectsMargin/ObjectsGrid/ObjectBorder4" to="." method="_on_object_border_4_focus_entered"]
+[connection signal="focus_exited" from="ObjectsMargin/ObjectsGrid/ObjectBorder4" to="." method="_on_object_border_4_focus_exited"]
+[connection signal="focus_entered" from="ObjectsMargin/ObjectsGrid/ObjectBorder5" to="." method="_on_object_border_5_focus_entered"]
+[connection signal="focus_exited" from="ObjectsMargin/ObjectsGrid/ObjectBorder5" to="." method="_on_object_border_5_focus_exited"]
+[connection signal="focus_entered" from="ObjectsMargin/ObjectsGrid/ObjectBorder6" to="." method="_on_object_border_6_focus_entered"]
+[connection signal="focus_exited" from="ObjectsMargin/ObjectsGrid/ObjectBorder6" to="." method="_on_object_border_6_focus_exited"]
+[connection signal="pressed" from="ContinueMargin/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="MarginContainer/Reroll" to="." method="_on_reroll_pressed"]

@@ -1,0 +1,21 @@
+Cosas a revisar en un futuro en el desarrollo del juego:
+In playlist:
+Escalar resolución
+Multiplayer
+Port Forwarding
+Transiciones entre escenas asíncronas
+Añadir todas las estadísticas a los personajes jugables
+autoguardado
+Añadir armas
+Añadir objetos pasivos
+Añadir menú selección de menús
+añadir leaderboard con bbdd
+Not In Playlist:
+Añadir descripciones
+Añadir escalado de oro y daño en armas
+vender armas
+subir niveles de armas
+
+
+Bugs conocidos:
+	Cuando se mantienen ambas flechas a la vez a veces el jugador mira a la izquierda cuando se dirige a la derecha

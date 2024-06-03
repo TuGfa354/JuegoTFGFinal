@@ -1,0 +1,44 @@
+,en,es
+start,Start,Iniciar
+resume,Resume,Continuar
+options,Options,Opciones
+exit,Exit,Salir
+video,Video,Vídeo
+audio,Audio,Audio
+fullscreen,Fullscreen,Pantalla completa
+borderless,Borderless,Sin bordes
+vsync,VSync,VSync
+master,Master,Maestro
+music,Music,Música
+sound FX,Sound FX,sonido
+exit_menu,Exit to main menu,Salir al menú principal
+var example,I want to eat % burgers,Quiero comer % hamburguesas
+back,Back,Atrás 
+language,Language,Idioma
+english,English,Inglés
+spanish,Spanish,Español
+continue,Continue,Continuar
+resolution,Resolution,Resolución
+buy,Buy,Comprar
+reroll,Reroll,Repetir
+objects,Objects,Objetos
+weapons,Weapons,Armas
+wave,Wave,Oleada
+max_hp,Max HP,HP Max
+attack,Attack,Ataque
+defence,Defence,Defensa
+speed,Speed,Velocidad
+attack_speed,Attack speed,Velocidad de ataque
+hp_regeneration,HP regeneration,Regeneración de HP
+life_steal,Life steal,Robo de vida
+range,Range,Rango
+crit_rate,Crit rate,Prob crítico
+crit_damage,Crit damage,Daño crítico
+total_score,Total Score :,Puntuación total :
+send_score,Send Score,Enviar puntuación
+back_to_menu,Go back To Menu,Volver Al Menú
+ok_response,The score was saved,La puntuación fue guardada
+bad_response,There was a problem while saving the score,Ha habido un problema guardando la puntuación
+leaderboard,Leaderboard,Tabla de puntuaciones
+score,Score,Puntuación
+player,Player,Jugador

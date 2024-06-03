@@ -1,0 +1,12 @@
+res://Scenes/Levels/level_1.tscn
+res://Scenes/Ui/MainMenu.gd
+res://Scenes/Ui/button.tres
+res://Scenes/Ui/in_game_ui.tscn
+res://Scenes/Ui/upgrade_menu.tscn
+res://Scenes/Ui/pause_menu.tscn
+res://Scenes/PlayableCharacters/knight.tscn
+res://Scenes/PlayableCharacters/ParentPlayer.tscn
+res://Scenes/Ui/main_menu.tscn
+res://Scenes/Levels/parent_level.gd
+res://misc/TranslationFile - Hoja 1.en.translation
+res://misc/TranslationFile - Hoja 1.es.translation
